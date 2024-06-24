@@ -1,0 +1,21 @@
+*{
+    text-align: center;
+}
+nav{
+    height: 100px;
+}
+
+.main-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/stefanie-jockschat-9f1PRQs6Brs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2px;
+    position: relative;
+}
+
+h2{
+    margin-top: 20px;
+    
+}

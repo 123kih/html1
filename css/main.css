@@ -1,0 +1,62 @@
+.header{
+    width: 70%;
+    height: 60px;
+    background-color: #fff;
+}
+
+.header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.header p{
+    display: inline-block;
+}
+
+.left{
+    width: 70%;
+    height: 200px;
+    float: left;
+    background-color: #fff;
+    line-height: 33px;
+}
+
+.container p{
+    margin-top:-10px;
+    width: 800px;
+    display: block;
+}
+.right{
+    width: 30%;
+    height: 200px;
+    float: right;
+    margin-top: -60px;
+    
+}
+
+.right img{
+    width: 250px;
+    height: 280px;
+    padding: 10px;
+}
+
+.footer{
+    width: 70%;
+    height: 20px;
+    background-color: #fff;
+    clear: both;
+}
+
+.footer p{
+    margin-top: -20px;
+}
+
+.main-background{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../images/weichao-deng-ivi0jMfm0Do-unsplash.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

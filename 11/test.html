@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube-wrapper {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: perspective(700px);
+    position: relative;
+    left: calc(50vw - 50px);
+    top: calc(30vh - 50px);
+    transition: 0.3s;
+}
+.cube-wrapper:hover {
+    transform: perspective(700px) rotate3d(100, -550, 0, 45deg);
+}
+.cube-wrapper > div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+       font-weight: bold;
+    font-size: 20px;
+}
+.cube-front {
+    background-color: #FF0000;
+    transform: translate3d(0, 0, 50px);
+}
+.cube-back {
+    background-color: #0000FF;
+    transform: rotateY(180deg) translate3d(0, 0, 50px);
+}
+.cube-top {
+     background-color: #FFFF00;
+    transform: rotateX(90deg) translate3d(0, 0, 50px);
+}
+.cube-bottom {
+     background-color: #de0081;
+    transform: rotateX(-90deg) translate3d(0, 0, 50px);
+}
+.cube-left {
+    background-color: #00FF00;
+    transform: rotateY(-90deg) translate3d(0, 0, 50px);
+}
+.cube-right {
+    background-color: #f77c1c;
+    transform: rotateY(90deg) translate3d(0, 0, 50px);
+}
+    </style>
+</head>
+<body>
+    <h2>Raise the mouse pointer.</h2>
+<div class="cube-wrapper">
+    <div class="cube-front">Front</div>
+    <div class="cube-back">Back</div>
+    <div class="cube-top">Top</div>
+    <div class="cube-bottom">Bottom</div>
+    <div class="cube-left">Left</div>
+    <div class="cube-right">Right</div>
+</div>
+</body>
+</html>

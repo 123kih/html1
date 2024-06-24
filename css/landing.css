@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    
+}
+.top {
+/*  width: 100%px;
+    height: 457px;
+    background-color: #499add;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom); */
+    height: 510px;
+    padding: 20px;
+    background-color: #499add;
+    color: #fff;
+    background-image: linear-gradient(to bottom ,#499add,#4e61c0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-background{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.top-title {
+    /* max-width: 500px;
+    height: 40%;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: white; */
+    float: left;
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.bt {
+    padding: 12px;
+    background-color: rgb(75, 72, 72);
+    color: #fff;
+    border-radius: 7px;
+    border: transparent;
+    
+}
+
+
+.iphone{
+    /* margin-top: -109px;
+    margin-right: 100px;
+    float: right;
+    width: 300px;
+    max-width: 500px;
+    margin-bottom: -20px;*/
+    width: 400px;
+    float: right;
+    margin-top: 90px;
+    
+}
+
+.mid{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.mid-title{
+    height: 180px;
+    margin: auto;
+}
+.mid .bt{
+    width: 150px;
+    height: 50px;
+}
+
+.bottom-background{
+    background-color: #4e61c0;
+    color: #fff;
+    text-align: center;
+}
+
+.bottom-title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bottom-img{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    
+}
+
+.bottom-img div{
+    margin-right: 40px;
+}
+.bottom2{
+    width: 100%;
+}
+.bottom2-top{
+    text-align: center;
+    font-size: 15px;
+}
+
+.bottom2-img div{
+    float: left;
+}
+.port1{
+    width: 50%;
+}
+.port2{
+    width: 50%;
+}
+.port3{
+    width: 50%;
+}
+.port4{
+    width: 50%;
+}
+.bottom2-title{
+    position:absolute;
+    color: white;
+    margin: 0 auto;
+    float: left;
+}

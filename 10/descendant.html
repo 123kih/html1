@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하위선택자</title>
+    <style>
+        body{
+            background-color: #eee;
+        }
+        
+        section{
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        
+
+        p{
+            width: 500px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px  solid #000;
+            line-height: 2;
+        }
+        section >p{
+            color: #d90f0f;
+        }
+        h1+p{
+            color: #0426e6;
+        }
+        h1~p{
+            color: #e604c4;
+        }
+    </style>
+</head>
+<body>
+    <!--특정요소를 기준으로 그 안에 포함된 요소를 하위 요소라고 한다.
+        바로 한단계 아래에 있는 요소는 자식요소-->
+    <section>
+        <h1>예약 방법</h1>
+        <p>아직 올나인 예약신청이 준비되지 않았습니다.</p>
+        <div>
+            <p>가족실 : 60,000원</p>
+            <p>도마토리 : 25,000원</p>
+        </div>
+        <p>아직 올나인 예약신청이 준비되지 않았습니다.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* 우선적용 순서
+0.!important
+1.인라인
+2.id
+3.class
+4.태그
+ */
+
+/*
+    css Nomorlize
+    css reset
+  */
+div {
+    box-sizing : border-box;
+}
+body {
+    margin : 0;
+}
+html {
+    line-height : 1.15; /*기본 행간 높이*/
+}
+*{
+    margin: 0;
+}
+h1{
+    padding: 100px 5px 100px 100px;
+    margin: 100px;
+    background-color: aqua;
+    color:aliceblue
+}
+#test{
+    padding-left: 20px;
+    margin: 10px 20px 30px;
+}
+.c1{
+    background-color: blueviolet;
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+}
+#test{
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 10px 20px 30px 40px!important; 
+}
+#test{
+    margin: 100px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .wrapper1{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /*아이템 크기를 1:1:1 비율로 가지겠다는 뜻*/
+            grid-template-rows: minmax(100px,auto);/*줄높이 최소 100px*/
+            margin-bottom: 20px;
+        }
+
+        .wrapper2{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        }
+
+        .items{
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        .items:nth-child(odd){ /*odd: 홀수번째 지정*/
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <h1> auto-fit 일때</h1>
+    <div class="wrapper1"> 
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+    </div>
+
+    <h1>auto-fill 일때</h1>
+    <div class="wrapper2"> 
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+    </div>
+</body>
+</html>

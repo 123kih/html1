@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습</title>
+    <style>
+    @font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    }   
+    @font-face {
+    font-family: 'HSSanTokki20-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .pc{
+        font-family:'PyeongChangPeace-Bold', sans-serif;
+        text-align:center;
+        margin:0 auto;
+        background-color:rgb(71, 105, 7);
+        color:white;
+    }
+    #container { 
+        width:520px;
+        border:10px solid rgb(131, 192, 10);
+        padding:20px 40px;
+        margin:0 auto;
+        }
+        
+    fieldset { margin-bottom:15px; }
+        
+    legend { font-weight:bold; }
+    
+    .navi ul{
+        list-style: none;
+        padding-top:10px; 
+        padding-bottom:10px;
+    }
+
+    .navi ul li {
+        display:inline-block;
+        width:10px;
+        padding:10px;   
+    }
+
+    .nav1 a:link, .nav1 a:visited{
+        font-size:14px;
+        padding: 10px; 
+        text-decoration: none;
+    }
+    *{
+        background-color:beige;
+        font-family: 'HSSanTokki20-Regular';
+    }
+    span{
+        color:red;
+        font-style: em;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <form>
+    <h1 class="pc">오늘 내용 복습</h1>
+    <nav class="navi">
+        <ul>
+        <li><a href="#">이용</a></li>
+        <li><a href="#">객실</a></li>
+        <li><a href="#">예약방법 </a></li>
+        <li><a href="#">예약하기</a></li>
+        </ul>
+    </nav>  
+    <div id="container">
+        
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p><span>HTML,CSS,자바스크립트</span>의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+        <hr><br>
+        
+        <fieldset>
+            <legend id="r-name">개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" autofocus required 
+                    style="margin-left: 16px;">
+                </li>
+                <li>
+                    <label for="r-phone">연락처</label>
+                    <input type="tel" id="r-phone" required>    
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>지원 분야</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="web" checked>
+                    <label for="web">웹 퍼블리싱</label>
+                </li>
+                <li>
+                    <input type="radio" id="dev">
+                    <label for="dev">웹 어플리케이션 개발</label>
+                </li>
+                <li>
+                    <input type="radio" id="env">
+                    <label for="env">개발 환경 개선</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>지원 동기</legend>
+            <textarea id="textarea" style="width: 500px; height: 100px;"
+            placeholder="본사 지원 동기를 간략히 써주세요."></textarea>
+        </fieldset>
+        <button type="submit">접수하기</button>
+        <button type="reset">다시 쓰기</button>
+    </form>
+    </div>
+</body>
+</html>

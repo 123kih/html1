@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폰트 바꾸기</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+        @font-face {
+            font-family: 'Ownglyph_ryurue-Rg';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryurue-Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Ostrich';
+            src: local('Ostrich Sans'),
+                url('fonts/ostrich-sans-bold.woff') format('woff'),
+                url('fonts/ostrich-sans-bold.ttf') format('truetype'),
+        }
+
+        .ryurue {
+            font-family: "Ownglyph_ryurue-Rg", sans-serif;
+        }
+
+        .black-han-sans-regular {
+            font-family: "Black Han Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:rgba(0, 0, 0, 0.37)  
+        }
+
+        .wfont {
+            font-family: 'Ostrich', sans-serif;
+        }
+        
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>Using Default fonts </p>
+    <p class="wfont">Using Web fonts</p>
+    <p class="black-han-sans-regular">한글 폰트?</p>
+    <p class="ryurue">한글폰트 적용 확인!</p>
+</body>
+</html>

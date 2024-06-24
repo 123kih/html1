@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*  body{
+            background-image: url(images/bg2.png);
+            background-repeat: repeat-y;
+            
+        } */
+
+        .image-box{
+            width: 380px;
+            height: 220px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .image-thumbnail{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-image: url(images/bg5.jpg);
+        }
+
+        .product-title{
+            text-align: center;
+            display: table;
+            border: 1px solid #ccc;
+            width: 280px;
+            height: 250px;
+            margin-top: 20px;
+        }
+        .product-img-div{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .product-img{
+            max-width: 180px;
+            max-height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-box">
+        <div class="image image-thumbnail"></div>
+    </div>
+
+    <div class="product-title">
+        <div class=" product-img-div">
+            <img class="product-img" src="images/bg5.jpg">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .desc{
+            background-color: aqua;
+            width: 350px;
+            padding: 20px;
+            margin-right: 20px ;
+            margin-bottom: 20px;
+            float: left;
+            border: 5px dashed #000;
+        }
+        #clip-border{background-clip: border-box ;}
+        #clip-border{background-clip: padding-box ;}
+        #clip-border{background-clip: content-box ;}
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="desc" id="clip-border">
+            <p >
+                껍질에 붉은 빛이 돌아 레드향이라 불린다
+                레드향은 한라봉과 귤을 교배한 것으로
+                일반귤보다 2~3배 크고 과육이 붉고 통통하다
+            </p>
+        </div>
+        <div class="desc" id="clip-padding">
+            <p >
+                껍질에 붉은 빛이 돌아 레드향이라 불린다
+                레드향은 한라봉과 귤을 교배한 것으로
+                일반귤보다 2~3배 크고 과육이 붉고 통통하다
+            </p>
+        </div>
+        <div class="desc" id="clip-content">
+            <p>
+                껍질에 붉은 빛이 돌아 레드향이라 불린다
+                레드향은 한라봉과 귤을 교배한 것으로
+                일반귤보다 2~3배 크고 과육이 붉고 통통하다
+            </p>
+        </div>
+    </div>
+</body>
+</html>
